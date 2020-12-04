@@ -10,6 +10,12 @@ Examples:
 - num_args(True, False) ➞ 2
 - num_args({}) ➞ 1
 """
-def num_args():
-    # Your code here
+# star * can handle multiple arguments
+def num_args(*args, arg2):
+    print(len(args))
+    print(arg2)
+    
+    
+num_args("foo", "bar", arg2='this is a keyword arg')
+num_args("foo")
 
